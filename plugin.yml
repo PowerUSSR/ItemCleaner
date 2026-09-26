@@ -1,0 +1,16 @@
+name: ItemCleaner
+version: 1.0
+main: org.mineserver.itemcleaner.ItemCleanerPlugin
+api-version: 1.20
+description: Автоочистка брошенных предметов во всех мирах раз в 2 часа с предупреждениями в чат
+
+commands:
+  itemclean:
+    description: Статус/принудительная очистка брошенных предметов
+    usage: /itemclean [run]
+    permission: itemclean.admin
+
+permissions:
+  itemclean.admin:
+    description: Управление автоочисткой брошенных предметов
+    default: op
